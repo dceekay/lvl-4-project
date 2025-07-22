@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CiteFUD Test Upload</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>CiteFUD Test Uploader</h1>
+    <form id="uploadForm">
+      <input type="text" name="title" placeholder="Document Title" required />
+      <input type="text" name="author" placeholder="Author Name" required />
+      <input type="text" name="document_type" placeholder="Document Type (e.g., Thesis)" required />
+      <textarea name="abstract" placeholder="Abstract..." required></textarea>
+      <input type="file" name="file" accept=".pdf,.docx" required />
+      <button type="submit">Upload</button>
+    </form>
+
+    <h2>Uploaded Documents</h2>
+    <ul id="documentList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
